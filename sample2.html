@@ -1,49 +1,104 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Swiper中文网基础演示(www.swiper.com.cn)</title>
-<link rel="stylesheet" href="css/swiper.min.css">
-<!--Swiper3.0.4-->
-<style>
-.products-show{margin-top:50px;width:80%;}
-.products-show .swiper-slide{text-align:left;background:#fff;height:300px;background:#fff;position:relative}
-.products-show .swiper-slide img{position:absolute;bottom:0;background:#000}
-.products-show .swiper-slide img,.products-show .swiper-slide-active img{width:80%;opacity:0.4;}
-.swiper-slide-next img{height:100%}
-.products-show .swiper-slide-next {margin:0;background:#000;}
-.products-show .swiper-slide-next img{width:100%;opacity:0.7;left:0}
-.products-show .swiper-slide-active{text-align:right}
-.products-show .swiper-slide-active img{right:0;}
-.products-show .change img{width:70%!important; }
-.swiper-button-prev,.swiper-button-next{background:none;width:300px;height:260px;}
-.swiper-button-prev{left: 12%;}
-.swiper-button-next{right: 10%;}
-
-</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Swiper中文网基础演示(www.swiper.com.cn)</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--Swiper3.0.4-->
+    <style>
+        .products-show {
+            margin-top: 50px;
+            width: 80%;
+        }
+        
+        .products-show .swiper-slide {
+            text-align: left;
+            background: #fff;
+            height: 300px;
+            background: #fff;
+            position: relative
+        }
+        
+        .products-show .swiper-slide img {
+            position: absolute;
+            bottom: 0;
+            background: #000
+        }
+        
+        .products-show .swiper-slide img,
+        .products-show .swiper-slide-active img {
+            width: 80%;
+            opacity: 0.4;
+        }
+        
+        .swiper-slide-next img {
+            height: 100%
+        }
+        
+        .products-show .swiper-slide-next {
+            margin: 0;
+            background: #000;
+        }
+        
+        .products-show .swiper-slide-next img {
+            width: 100%;
+            opacity: 0.7;
+            left: 0
+        }
+        
+        .products-show .swiper-slide-active {
+            text-align: right
+        }
+        
+        .products-show .swiper-slide-active img {
+            right: 0;
+        }
+        
+        .products-show .change img {
+            width: 70%!important;
+        }
+        
+        .swiper-button-prev,
+        .swiper-button-next {
+            background: none;
+            width: 300px;
+            height: 260px;
+        }
+        
+        .swiper-button-prev {
+            left: 12%;
+        }
+        
+        .swiper-button-next {
+            right: 10%;
+        }
+    </style>
 </head>
-<body>
-<div class="swiper-container products-show">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide blue-slide"><img src="img/product_video_pic01.jpg"></div>
-    <div class="swiper-slide red-slide"><img src="img/product_video_pic01.jpg"></div>
-    <div class="swiper-slide orange-slide"><img src="img/product_video_pic01.jpg"></div>
-    <div class="swiper-slide red-slide"><img src="img/product_video_pic01.jpg"></div>
-    <div class="swiper-slide orange-slide"><img src="img/product_video_pic01.jpg"></div>
-  </div>
-  <div class="swiper-button-next"></div>
-   <div class="swiper-button-prev"></div>
-</div>
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="js/swiper.min.js"></script>
-<script type="text/javascript">
-  var mySwiper = new Swiper('.swiper-container',{
-   	loop:true,   
-	slidesPerView : 3,
-	slidesPerGroup : 1,	
-	nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-})
 
+<body>
+    <div class="swiper-container products-show">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide blue-slide"><img src="img/product_video_pic01.jpg"></div>
+            <div class="swiper-slide red-slide"><img src="img/product_video_pic01.jpg"></div>
+            <div class="swiper-slide orange-slide"><img src="img/product_video_pic01.jpg"></div>
+            <div class="swiper-slide red-slide"><img src="img/product_video_pic01.jpg"></div>
+            <div class="swiper-slide orange-slide"><img src="img/product_video_pic01.jpg"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript">
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        })
+    </script>
 </body>
+
 </html>
