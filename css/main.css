@@ -278,8 +278,8 @@ a.link-btn-01:link, a.link-btn-01:visited { background: #00c4bc; color: #fff; bo
 .banner-txt { position: static; width: 80%; text-align: center; margin: 20px auto 0; }
 .banner-txt h2 { font-size: 2.2rem; }
 .product-item-icon { width: 50%; }
-.banner-txt p { margin-top: 10px; }
-.banner-txt p { width: 310px; padding: 0; }
+.banner-txt p { margin-top: 10px; width: 310px; padding: 0; }
+.banner-txt p { width:100%; padding: 0; }
 .banner-txt .link-btn-01 { margin-top: 10px; }
 .product-item-title { font-size: 4rem; line-height: 3rem; }
 .hr-line { margin-top: 70px; }

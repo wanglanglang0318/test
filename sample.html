@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Swiper中文网基础演示(www.swiper.com.cn)</title>
+<link rel="stylesheet" href="css/swiper.min.css">
+<!--Swiper3.0.4-->
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+.blue-slide {
+	background: #4390EE;
+}
+.red-slide {
+	background: #CA4040;
+}
+.orange-slide {
+	background: #FF8604;
+}
+.swiper-slide {
+	line-height: 300px;
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+}
+.products-show{width:600px;height:400px}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 27px 44px;
+    -webkit-background-size: 27px 44px;
+    background-size: 27px 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+	right:30px!important
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+/*    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%…19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E);*/
+    left:90%;
+    right:30px;
+}
+.swiper-button-prev,.swiper-button-next {margin-top:-80px}
+.swiper-button-next{margin-top:40px}
+</style>
+</head>
+<body>
+<div class="swiper-container products-show">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide blue-slide"><img src="img/product02_pic02.png"></div>
+    <div class="swiper-slide red-slide">slider2</div>
+    <div class="swiper-slide orange-slide">slider3</div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+	direction:'vertical',
+  pagination: '.swiper-pagination',
+  paginationType : 'fraction',
+  nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+  paginationFractionRender: function (swiper, currentClassName, totalClassName) {
+      return '<span class="' + currentClassName + '"></span>' +
+             ' / ' +
+             '<span class="' + totalClassName + '"></span>';
+  }
+});
+</script>
+</body>
+</html>
